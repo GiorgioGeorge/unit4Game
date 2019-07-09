@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='assets/css/style.css'>
+    <link href="https://fonts.googleapis.com/css?family=Archivo+Black|Catamaran&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"
+        integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous">
+        </script>
+
+    <script src='main.js'></script>
+</head>
+
+<body>
+    <h1 id="myName">George Mendoza</h1>
+    <div class="mainContent">
+        <h2>"CRYSTAL GAME" </h2>
+        <hr id="forRon">
+        <div>
+            <h3>Instructions</h3>
+            <ol>
+                <li> A random number will be produced at the start of the game<span>"Number to Match</span></li>
+                <li> There will be four crystals below</li>
+                <li>You win if your total score equals the random number</li>
+                <li>You lose if your total score goes above the random number</li>
+                <li>A specific amount of points will be added to your total score when you click on a crystal</li>
+                <li>The Value of each crystal is a mystery until clicked on</li>
+                <li>At start of each game crystal value and number to match will be randomized</li>
+            </ol>
+        </div>
+        <div class="numberToMatch">
+            <h2>Number to Match:
+                <span id="randnum"></span>
+            </h2>
+        </div>
+        <div class="winsAndLosses">
+            <h2>Wins:
+                <span id="Wins"></span>
+                </br>
+                Losses:
+                <span id="Losses"></span>
+            </h2>
+        </div>
+
+        <div class="gems">
+            <img src="assets/images/redgem.png" class=gemImage id="one" alt="Red Gem" height="180" width="180">
+            <img src="assets/images/greengem.png" class=gemImage id="two" alt="Green Gem" height="180" width="180">
+            <img src="assets/images/yellowgem.png" class=gemImage id="three" alt="Yellow Gem" height="180" width="180">
+            <img src="assets/images/bluegem.png" class=gemImage id="four" alt="Blue Gem" height="180" width="180">
+        </div>
+        <div class="userScore">
+            <h2>Total Score:
+                <span id="finalScore"></span>
+            </h2>
+        </div>
+    </div>
+    <footer class="copyright">
+        "COPYRIGHT"
+    </footer>
+    <script type="text/javascript" src="assets/javascript/game.js"></script>
+</body>
+
+</html>
